@@ -1,5 +1,5 @@
 {% set name = "linkedin-scraper" %}
-{% set version = "2.9.0" %}
+{% set version = "2.9.1" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/linkedin_scraper-{{ version }}.tar.gz
-  sha256: 78631e2e1f569062bcb112eba61d630bd13280397ffb3073ef8651d239e8b2ca
+  url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/{{ version }}.tar.gz
+  sha256: a27b19c183758e99fc77f5adeb0195aecc8a45dc45c29a7ccf39c16617597554
 
 build:
   number: 0
