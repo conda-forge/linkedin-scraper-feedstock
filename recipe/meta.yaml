@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 3d2baea650e3edd46f85145f142480b08efc7c8c8111ac770c6df3254f205ef3
+  sha256: a27b19c183758e99fc77f5adeb0195aecc8a45dc45c29a7ccf39c16617597554
 
 build:
   number: 0
