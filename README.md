@@ -1,11 +1,11 @@
-About linkedin-scraper
-======================
+About linkedin-scraper-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/linkedin-scraper-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/joeyism/linkedin_scraper
 
 Package license: GPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/linkedin-scraper-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scrapes user data from Linkedin
 
