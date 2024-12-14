@@ -1,5 +1,5 @@
 {% set name = "linkedin-scraper" %}
-{% set version = "2.11.4" %}
+{% set version = "2.11.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c6bdbd4ceb12f49f08912635bc073a3c08d5cd0e5b42d41ba47aaaaf2634cef5
+  sha256: 838d63f8a14727068341f3b0772c959a7139c4d4f5bd7f3d33162f3b4779b19b
 
 build:
   number: 0
@@ -18,10 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
   run:
     - lxml
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - selenium
 
@@ -32,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/joeyism/linkedin_scraper
