@@ -1,5 +1,5 @@
 {% set name = "linkedin-scraper" %}
-{% set version = "2.11.5" %}
+{% set version = "3.0.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 838d63f8a14727068341f3b0772c959a7139c4d4f5bd7f3d33162f3b4779b19b
+  url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: b733cff3b7b3c6970e389d8c3fde4ab0d63afc9172ab5d60814d04ba74323290
 
 build:
   number: 0
@@ -25,6 +25,10 @@ requirements:
     - python >={{ python_min }}
     - requests
     - selenium
+    - playwright-python
+    - python-dotenv
+    - pydantic
+    - aiofiles
 
 test:
   imports:
