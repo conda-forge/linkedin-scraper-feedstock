@@ -27,6 +27,7 @@ requirements:
     - selenium
     - playwright-python
     - python-dotenv
+    - pydantic
 
 test:
   imports:
