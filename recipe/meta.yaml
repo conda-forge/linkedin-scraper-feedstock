@@ -1,5 +1,5 @@
 {% set name = "linkedin-scraper" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f9bc84e2188175ecdfd72a697dad2766b91c728cef958d67b0f444ea38093dd9
+  sha256: 6009c112824ec306c140143970b894eb9989dd89c9bd4992700f569a14758a8b
 
 build:
   number: 0
