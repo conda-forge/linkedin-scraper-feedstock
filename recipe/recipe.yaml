@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  name: linkedin-scraper
+  version: "3.1.2"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/joeyism/linkedin_scraper/archive/refs/tags/${{ version }}.tar.gz
+  sha256: acd051c110b797b868c08347948150512241ace3ccf7881a9b72c883c415014e
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - lxml
+    - python >=${{ python_min }}
+    - requests
+    - selenium
+    - playwright-python
+    - python-dotenv
+    - pydantic
+    - aiofiles
+
+tests:
+  - python:
+      imports:
+        - linkedin_scraper
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: Scrapes user data from Linkedin
+  license: GPL-3.0-only
+  license_file: LICENSE
+  homepage: https://github.com/joeyism/linkedin_scraper
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
